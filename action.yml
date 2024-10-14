@@ -1,0 +1,16 @@
+name: "Custom Greet Action"
+description: "A GitHub action to greet a user"
+author: "Seppe Verbeken"
+inputs:
+  who-to-greet:
+    description: "The name of the person to greet"
+    required: true
+    default: "World"
+
+runs:
+  using: "node12"
+  main: "index.js"
+
+branding:
+  icon: "wave"
+  color: "blue"
